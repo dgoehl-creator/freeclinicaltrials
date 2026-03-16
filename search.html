@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Clinical Trials — FreeClinicalTrials.com</title>
+  <meta name="description" content="Search recruiting clinical trials by condition and location. Real-time results from ClinicalTrials.gov, in plain English.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .search-page-hero {
+      background: linear-gradient(135deg, #1a5c6b 0%, #0f3840 100%);
+      padding: 2.5rem 1.25rem 2rem;
+    }
+    .search-page-hero h1 { color: #fff; font-size: clamp(1.6rem,3.5vw,2.4rem); margin-bottom: 1rem; }
+    .results-meta { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+    .results-meta h2 { font-family: 'Inter',sans-serif; font-size: 1.1rem; font-weight: 600; margin: 0; }
+    #results-count { font-size: .9rem; color: #888; }
+    .results-layout { display: grid; grid-template-columns: 240px 1fr; gap: 2rem; align-items: start; max-width: 1060px; margin: 0 auto; padding: 2rem 1.25rem; }
+    .filters-sidebar { background: #fff; border: 1px solid #e0e8ea; border-radius: 12px; padding: 1.25rem; position: sticky; top: 80px; }
+    .filters-sidebar h4 { font-size: .8rem; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 1rem; }
+    .filter-group { margin-bottom: 1.25rem; }
+    .filter-group label { font-size: .85rem; font-weight: 600; color: #444; display: block; margin-bottom: .4rem; }
+    .filter-group select, .filter-group input { width: 100%; padding: .5rem .75rem; border: 1px solid #e0e8ea; border-radius: 6px; font-size: .875rem; font-family: 'Inter',sans-serif; color: #1a1a1a; background: #fafaf8; }
+    @media(max-width:768px) { .results-layout { grid-template-columns: 1fr; } .filters-sidebar { position: static; } }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Free<span>Clinical</span>Trials</a>
+    <ul class="nav-links">
+      <li><a href="/search">Search Trials</a></li>
+      <li><a href="/conditions/skin-cancer">Skin Cancer</a></li>
+      <li><a href="/conditions/breast-cancer">Breast Cancer</a></li>
+      <li><a href="/#email-signup" class="nav-cta">Get Alerts</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="search-page-hero">
+  <div class="container">
+    <h1>Search Clinical Trials</h1>
+    <form class="search-form" id="results-search-form" role="search">
+      <input type="text" id="results-condition-input" placeholder="Condition or disease" autocomplete="off" aria-label="Condition">
+      <div class="search-divider"></div>
+      <input type="text" id="results-zip-input" class="zip-input" placeholder="Zip code (optional)" maxlength="10" aria-label="Zip code">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+  </div>
+</div>
+
+<div class="results-layout">
+  <!-- Sidebar filters -->
+  <aside class="filters-sidebar">
+    <h4>Refine Results</h4>
+    <div class="filter-group">
+      <label for="filter-distance">Distance</label>
+      <select id="filter-distance">
+        <option value="">Any distance</option>
+        <option value="25">Within 25 miles</option>
+        <option value="50" selected>Within 50 miles</option>
+        <option value="100">Within 100 miles</option>
+        <option value="250">Within 250 miles</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="filter-phase">Trial Phase</label>
+      <select id="filter-phase">
+        <option value="">All phases</option>
+        <option value="PHASE1">Phase 1</option>
+        <option value="PHASE2">Phase 2</option>
+        <option value="PHASE3">Phase 3</option>
+        <option value="PHASE4">Phase 4</option>
+      </select>
+    </div>
+    <div class="callout" style="margin-top:1.5rem;">
+      <p><strong>Newly diagnosed?</strong> Get the complete treatment picture at <a href="https://planetcure.com" target="_blank">PlanetCure.com →</a></p>
+    </div>
+  </aside>
+
+  <!-- Results -->
+  <main>
+    <div class="results-meta">
+      <h2>Results for: <span id="condition-display" style="color:#1a5c6b;">…</span></h2>
+      <span id="results-count"></span>
+    </div>
+    <div id="results-container">
+      <div class="loading-state"><div class="loading-spinner"></div><p>Loading trials…</p></div>
+    </div>
+
+    <!-- Email alert capture -->
+    <div class="email-section mt-lg" id="email-signup">
+      <h2>Get Alerted for New Trials</h2>
+      <p>We'll email you when new recruiting trials open for your condition.</p>
+      <form class="email-form email-signup-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit" class="btn btn-teal">Get Alerts</button>
+      </form>
+      <p class="email-fine">No spam. No pharma ads. Unsubscribe anytime.</p>
+    </div>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-bottom">
+      <span>© 2026 FreeClinicalTrials.com — Data sourced from ClinicalTrials.gov (NIH)</span>
+      <a href="/">Home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
