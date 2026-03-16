@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Clinical Trials Search — Find a Trial for Your Condition</title>
+  <meta name="description" content="Search 400,000+ recruiting clinical trials by condition and location. Plain English. Free. No registration required. Find trials for cancer, diabetes, heart disease, MS, Alzheimer's, and more.">
+  <meta property="og:title" content="FreeClinicalTrials.com — Find a Trial for Your Condition">
+  <meta property="og:description" content="The fastest way to find recruiting clinical trials near you. Search by condition and zip code. Free, plain English, no sign-up required.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Free<span>Clinical</span>Trials</a>
+    <ul class="nav-links">
+      <li><a href="/search">Search Trials</a></li>
+      <li><a href="/conditions/skin-cancer">Skin Cancer</a></li>
+      <li><a href="/conditions/breast-cancer">Breast Cancer</a></li>
+      <li><a href="/conditions/diabetes">Diabetes</a></li>
+      <li><a href="#email-signup" class="nav-cta">Get Alerts</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">400,000+ Active Trials · Updated Daily · 100% Free</div>
+    <h1>Find a Clinical Trial for Your Condition</h1>
+    <p class="hero-sub">The government database has every trial. We made it actually usable. Search by condition and zip code — plain English, no jargon, no sign-up.</p>
+
+    <div class="search-wrap">
+      <form class="search-form" id="home-search-form" role="search">
+        <input type="text" id="search-condition" placeholder="Condition or disease (e.g. skin cancer)" autocomplete="off" aria-label="Condition">
+        <div class="search-divider"></div>
+        <input type="text" id="search-zip" class="zip-input" placeholder="Zip code (optional)" maxlength="10" aria-label="Zip code">
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-item"><span class="stat-num">400k+</span><span class="stat-label">Active Trials</span></div>
+      <div class="stat-item"><span class="stat-num">190+</span><span class="stat-label">Countries</span></div>
+      <div class="stat-item"><span class="stat-num">Free</span><span class="stat-label">Always</span></div>
+      <div class="stat-item"><span class="stat-num">Daily</span><span class="stat-label">Updated</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Browse by condition -->
+<section>
+  <div class="container--wide">
+    <div class="section-label">Browse by Condition</div>
+    <h2 class="section-heading">Find Trials for Your Diagnosis</h2>
+    <p class="section-sub">Select your condition for a curated list of currently recruiting trials, explained in plain English.</p>
+
+    <div class="conditions-grid">
+      <a href="/conditions/skin-cancer" class="condition-pill">
+        <span class="pill-icon">☀️</span>
+        <div><h3>Skin Cancer</h3><p>BCC, SCC, Melanoma</p></div>
+      </a>
+      <a href="/conditions/breast-cancer" class="condition-pill">
+        <span class="pill-icon">💗</span>
+        <div><h3>Breast Cancer</h3><p>All stages &amp; subtypes</p></div>
+      </a>
+      <a href="/conditions/lung-cancer" class="condition-pill">
+        <span class="pill-icon">🫁</span>
+        <div><h3>Lung Cancer</h3><p>NSCLC, SCLC</p></div>
+      </a>
+      <a href="/conditions/prostate-cancer" class="condition-pill">
+        <span class="pill-icon">🎗️</span>
+        <div><h3>Prostate Cancer</h3><p>All stages</p></div>
+      </a>
+      <a href="/conditions/colorectal-cancer" class="condition-pill">
+        <span class="pill-icon">🩸</span>
+        <div><h3>Colorectal Cancer</h3><p>Colon &amp; rectal</p></div>
+      </a>
+      <a href="/conditions/melanoma" class="condition-pill">
+        <span class="pill-icon">🔬</span>
+        <div><h3>Melanoma</h3><p>Early &amp; advanced</p></div>
+      </a>
+      <a href="/conditions/type-2-diabetes" class="condition-pill">
+        <span class="pill-icon">💉</span>
+        <div><h3>Type 2 Diabetes</h3><p>Management &amp; prevention</p></div>
+      </a>
+      <a href="/conditions/multiple-sclerosis" class="condition-pill">
+        <span class="pill-icon">🧠</span>
+        <div><h3>Multiple Sclerosis</h3><p>Relapsing &amp; progressive</p></div>
+      </a>
+      <a href="/conditions/alzheimers" class="condition-pill">
+        <span class="pill-icon">🧩</span>
+        <div><h3>Alzheimer's Disease</h3><p>Early &amp; late stage</p></div>
+      </a>
+      <a href="/conditions/heart-disease" class="condition-pill">
+        <span class="pill-icon">❤️</span>
+        <div><h3>Heart Disease</h3><p>CAD, heart failure</p></div>
+      </a>
+      <a href="/conditions/rheumatoid-arthritis" class="condition-pill">
+        <span class="pill-icon">🦴</span>
+        <div><h3>Rheumatoid Arthritis</h3><p>RA &amp; related conditions</p></div>
+      </a>
+      <a href="/search" class="condition-pill" style="border-style:dashed;">
+        <span class="pill-icon">🔍</span>
+        <div><h3>Search All</h3><p>Any condition</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section style="background:#f0f7f9; padding:4rem 0;">
+  <div class="container--wide">
+    <div class="section-label">How It Works</div>
+    <h2 class="section-heading">From diagnosis to trial in 3 steps</h2>
+
+    <div class="how-grid">
+      <div class="how-step">
+        <div class="step-num">1</div>
+        <h3>Search your condition</h3>
+        <p>Enter your diagnosis and zip code. We search the complete federal database of recruiting trials in real time.</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">2</div>
+        <h3>Read plain-English results</h3>
+        <p>We translate the medical jargon into plain English so you can actually understand what each trial involves.</p>
+      </div>
+      <div class="how-step">
+        <div class="step-num">3</div>
+        <h3>Connect with the trial site</h3>
+        <p>Click through to express interest directly. Trial coordinators will screen you for eligibility — no cost to apply.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why it's free -->
+<section>
+  <div class="container">
+    <div class="why-callout">
+      <h2>Why Is This Free?</h2>
+      <p>The clinical trial data comes from <span class="amber">ClinicalTrials.gov</span> — a federal government database funded by your tax dollars. It's public information. We just made it usable.</p>
+      <p>Clinical trials are also free to participate in. Sponsors cover treatment costs, and many trials compensate participants for their time. You should never pay to join a clinical trial — if someone asks you to, it's a scam.</p>
+      <p>We keep this service free for patients. We're supported by the healthcare companies that benefit from finding the right patients for their trials.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Clinical trials explainer -->
+<section>
+  <div class="container--wide">
+    <div class="section-label">Not sure about clinical trials?</div>
+    <h2 class="section-heading">What You Should Know Before You Search</h2>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:2rem;">
+      <div style="background:#fff;border:1px solid #e0e8ea;border-radius:12px;padding:1.75rem;">
+        <div style="font-size:1.75rem;margin-bottom:.75rem;">🆓</div>
+        <h3 style="font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;color:#1a5c6b;margin-bottom:.5rem;">Trials Are Free to Join</h3>
+        <p style="font-size:.9rem;color:#4a5568;margin:0;">Sponsors pay for the experimental treatment. Many also compensate you for time and travel.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #e0e8ea;border-radius:12px;padding:1.75rem;">
+        <div style="font-size:1.75rem;margin-bottom:.75rem;">🚀</div>
+        <h3 style="font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;color:#1a5c6b;margin-bottom:.5rem;">Access Cutting-Edge Treatments</h3>
+        <p style="font-size:.9rem;color:#4a5568;margin:0;">Trials are often the only way to access treatments that won't be widely available for years.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #e0e8ea;border-radius:12px;padding:1.75rem;">
+        <div style="font-size:1.75rem;margin-bottom:.75rem;">👁️</div>
+        <h3 style="font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;color:#1a5c6b;margin-bottom:.5rem;">Closely Monitored</h3>
+        <p style="font-size:.9rem;color:#4a5568;margin:0;">Trial participants are watched more carefully than standard patients. More appointments, more data.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #e0e8ea;border-radius:12px;padding:1.75rem;">
+        <div style="font-size:1.75rem;margin-bottom:.75rem;">🚪</div>
+        <h3 style="font-family:'Inter',sans-serif;font-size:1rem;font-weight:700;color:#1a5c6b;margin-bottom:.5rem;">You Can Leave Anytime</h3>
+        <p style="font-size:.9rem;color:#4a5568;margin:0;">Participation is always voluntary. You can withdraw from a trial at any time for any reason.</p>
+      </div>
+    </div>
+
+    <!-- PlanetCure crosslink -->
+    <div class="crosslink-banner mt-lg">
+      <p>Newly diagnosed and need more than just trial info? <strong>PlanetCure.com</strong> covers every treatment option — conventional, integrative, and experimental — for your diagnosis, in plain English.</p>
+      <a href="https://planetcure.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit PlanetCure →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Email capture -->
+<section id="email-signup">
+  <div class="container">
+    <div class="email-section">
+      <h2>Get Alerted When New Trials Open</h2>
+      <p>Tell us your condition. We'll email you when new recruiting trials launch — no spam, no pharma ads.</p>
+      <form class="email-form email-signup-form" data-condition="">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit" class="btn btn-teal">Get Alerts</button>
+      </form>
+      <p class="email-fine">We never sell your email. Unsubscribe anytime. Not affiliated with any pharma company or trial sponsor.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">Free<span>Clinical</span>Trials</a>
+        <p>The consumer-friendly front door to ClinicalTrials.gov. 400,000+ trials, plain English, always free.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Search</h4>
+          <ul>
+            <li><a href="/conditions/skin-cancer">Skin Cancer Trials</a></li>
+            <li><a href="/conditions/breast-cancer">Breast Cancer Trials</a></li>
+            <li><a href="/conditions/melanoma">Melanoma Trials</a></li>
+            <li><a href="/conditions/diabetes">Diabetes Trials</a></li>
+            <li><a href="/search">Search All Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://planetcure.com" target="_blank" rel="noopener">PlanetCure.com</a></li>
+            <li><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/for-researchers">For Researchers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="footer-disclaimer">
+      Clinical trial data is sourced from ClinicalTrials.gov, a service of the National Institutes of Health.
+      FreeClinicalTrials.com is not affiliated with ClinicalTrials.gov or any government agency.
+      This site provides information only — it does not constitute medical advice. Always consult a qualified healthcare professional before enrolling in any clinical trial.
+    </p>
+    <div class="footer-bottom">
+      <span>© 2026 FreeClinicalTrials.com — A Distinctive Brands property</span>
+      <a href="/privacy">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
