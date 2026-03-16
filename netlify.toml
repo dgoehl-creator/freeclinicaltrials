@@ -1,0 +1,16 @@
+[[redirects]]
+  from = "/conditions/*"
+  to = "/conditions/:splat.html"
+  status = 200
+
+[[redirects]]
+  from = "/search"
+  to = "/search.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
