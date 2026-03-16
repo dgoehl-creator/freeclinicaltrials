@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Cancer Clinical Trials — Recruiting Now | FreeClinicalTrials.com</title>
+  <meta name="description" content="Find recruiting clinical trials for skin cancer — basal cell carcinoma, squamous cell carcinoma, and melanoma. Search by location. Updated daily from ClinicalTrials.gov.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .page-hero { background: linear-gradient(135deg,#1a5c6b 0%,#0f3840 100%); color:#fff; padding:3.5rem 1.25rem 3rem; }
+    .page-hero h1 { color:#fff; font-size:clamp(1.8rem,4.5vw,2.9rem); margin-bottom:.5em; }
+    .page-hero p { opacity:.88; font-size:1.1rem; max-width:650px; }
+    .condition-layout { display:grid; grid-template-columns:240px 1fr; gap:2rem; align-items:start; max-width:1060px; margin:0 auto; padding:2rem 1.25rem; }
+    .condition-sidebar { position:sticky; top:80px; }
+    .info-box { background:#fff; border:1px solid #e0e8ea; border-radius:12px; padding:1.25rem; margin-bottom:1.25rem; }
+    .info-box h4 { font-size:.8rem; text-transform:uppercase; letter-spacing:1px; color:#888; margin-bottom:.75rem; }
+    .info-box ul { list-style:none; padding:0; margin:0; }
+    .info-box li { font-size:.88rem; padding:.3rem 0; border-bottom:1px solid #f0f0ee; color:#444; }
+    .info-box li:last-child { border-bottom:none; }
+    @media(max-width:768px) { .condition-layout{grid-template-columns:1fr;} .condition-sidebar{position:static;} }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" role="navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Free<span>Clinical</span>Trials</a>
+    <ul class="nav-links">
+      <li><a href="/search">Search Trials</a></li>
+      <li><a href="/conditions/skin-cancer" style="color:#1a5c6b;font-weight:700;">Skin Cancer</a></li>
+      <li><a href="/conditions/breast-cancer">Breast Cancer</a></li>
+      <li><a href="/#email-signup" class="nav-cta">Get Alerts</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="hero-badge">Recruiting Now · Updated Daily</div>
+    <h1>Skin Cancer Clinical Trials</h1>
+    <p>Currently recruiting trials for basal cell carcinoma, squamous cell carcinoma, melanoma, and Merkel cell carcinoma — pulled live from the federal database. Eligibility summaries in plain English.</p>
+  </div>
+</div>
+
+<div class="condition-layout">
+  <aside class="condition-sidebar">
+    <div class="info-box">
+      <h4>Condition Types</h4>
+      <ul>
+        <li>☀️ Basal Cell Carcinoma (BCC)</li>
+        <li>🔴 Squamous Cell Carcinoma (SCC)</li>
+        <li>🔬 Melanoma</li>
+        <li>⚡ Merkel Cell Carcinoma</li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <h4>Quick Facts</h4>
+      <ul>
+        <li>Most common cancer in the US</li>
+        <li>9,500+ diagnosed daily</li>
+        <li>Trials are free to join</li>
+        <li>Many cover travel costs</li>
+      </ul>
+    </div>
+
+    <div class="callout">
+      <p><strong>Newly diagnosed?</strong> Before you search for trials, read the complete treatment guide at <a href="https://planetcure.com/skin-cancer" target="_blank">PlanetCure.com →</a></p>
+    </div>
+
+    <div class="crosslink-banner" style="flex-direction:column;margin-top:1.25rem;">
+      <p style="font-size:.88rem;">Get alerted when new skin cancer trials open near you.</p>
+      <form class="email-signup-form" data-condition="skin cancer" style="margin-top:.75rem;">
+        <input type="email" placeholder="Your email" required style="width:100%;padding:.6rem .75rem;border:1px solid #e0e8ea;border-radius:6px;font-family:Inter,sans-serif;font-size:.9rem;margin-bottom:.5rem;">
+        <button type="submit" class="btn btn-primary btn-sm" style="width:100%;">Get Alerts</button>
+      </form>
+    </div>
+  </aside>
+
+  <main>
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem;">
+      <h2 style="font-family:'Inter',sans-serif;font-size:1.1rem;font-weight:600;margin:0;">Recruiting Skin Cancer Trials</h2>
+      <span id="condition-results-count" style="font-size:.9rem;color:#888;"></span>
+    </div>
+
+    <div id="condition-results" data-condition="skin cancer">
+      <div class="loading-state"><div class="loading-spinner"></div><p>Loading trials…</p></div>
+    </div>
+  </main>
+</div>
+
+<section style="background:#f0f7f9;padding:3rem 0;">
+  <div class="container">
+    <div class="section-label">About Clinical Trials for Skin Cancer</div>
+    <h2 class="section-heading">What You Should Know</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:1.5rem;">
+      <div class="callout">
+        <p><strong>Immunotherapy trials</strong> are among the most active areas for melanoma. PD-1 inhibitors, combination checkpoint therapy, and new targets are all in active trials — many for patients who have already received prior treatment.</p>
+      </div>
+      <div class="callout">
+        <p><strong>Surgery-free trials</strong> exist for BCC and SCC. Some are testing whether immunotherapy alone can replace surgery for certain squamous cell cancers — real options worth knowing about.</p>
+      </div>
+      <div class="callout">
+        <p><strong>Prevention trials</strong> are available for high-risk patients — those with multiple prior skin cancers. These often involve simple interventions like vitamins, sunscreen protocols, or monitoring strategies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-disclaimer">Clinical trial data sourced from ClinicalTrials.gov (NIH). FreeClinicalTrials.com is not affiliated with any pharmaceutical company, trial sponsor, or government agency. This is informational only — not medical advice.</p>
+    <div class="footer-bottom">
+      <span>© 2026 FreeClinicalTrials.com</span>
+      <a href="/">Home</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
